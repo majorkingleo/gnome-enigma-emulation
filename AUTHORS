@@ -1,0 +1,12 @@
+KAWAMURA Masao <kawamura@mlb.co.jp>
+	Bug fixes and japanese translation.
+
+Martin Oberzalek <kingleo@gmx.at>
+	Base application
+	de manpage
+	en manpage
+	en.po
+
+Alexander Oberzalek
+	base application on which genigma is based
+	example - shell with original messages

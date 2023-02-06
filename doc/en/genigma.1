@@ -1,0 +1,74 @@
+.TH genigma "1"
+.SH NAME
+genigma \- an emulation of the famous Enigma, the crytografical machine of the germans before and during the 2nd world war.
+.SH SYNOPSIS
+.B genigma 
+[[-l] [--loud]] [[-h] [--help]] 
+.I WHEELORDER
+.I RINGS
+.I STARTPOS 
+[
+.I PLUGBOARD
+]
+.SH DESCRIPTIONS
+.B genigma 
+an emulation of the famous Enigma. You can use
+.B genigma 
+on the console and on your X Server. The application has a grafical 
+.I GNOME 
+interface.
+
+.TP 
+.B \-l, \-\-loud
+Prints the wheelposition to 
+.I stderr 
+after every character.
+
+.TP
+.B \-h, \-\-help
+Prints a short help screen to
+.I stderr
+
+.TP
+.B WHEELORDER
+The order of the wheels. There are 5 wheels available and 3 wheels are used.
+
+.TP
+.B RINGS
+The position of the 3 rings.
+
+.TP
+.B STARTPOS
+The starting position of the 3 wheels.
+
+.TP
+.B PLUGBOARD
+The plugboard. Maximum 26 characters. 
+
+.SH EXAMPLES
+$genigma 215 adg bsa hasdfg
+.P
+Now genigma encrypts the text from 
+.I stdin
+and puts it to
+.I stdout
+.P
+For more examples have a look at "example.sh" which is distributed with this genigma version.
+
+.SH ATTENTION
+You shouldn't use 
+.B genigma
+for en/de-crypting documents.
+
+.SH BUGS
+In console mode
+.B genigma
+is faster and uses less memory. In grafic mode
+.B genigma
+reads the whole file into the memory, en/de-crypts the text and then write it (optional) to a file.
+
+.SH AUTHOR
+Martin Oberzalek <leo@checkitmail.at>
+
+Homepage: http://members.chello.at/oberzalek/programme_gnome_en.html
+

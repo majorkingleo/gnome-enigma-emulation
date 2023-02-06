@@ -1,0 +1,252 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# KAWAMURA Masao <kawamura@mlb.co.jp>, 2001.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: genigma 1.2.3\n"
+"POT-Creation-Date: 2001-11-29 13:03+0100\n"
+"PO-Revision-Date: 2001-07-06 14:33+0900\n"
+"Last-Translator: KAWAMURA Masao <kawamura@mlb.co.jp>\n"
+"Language-Team: Japanese <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=EUC-JP\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/main.c:27
+msgid ""
+"Verwendung: genigma [-h] [-help] [--loud] [-l] WALZEN RINGE STARTPOS "
+"STECKER\n"
+"Wollen sie das grafische Programm starten, geben Sie keine Argumente an.\n"
+msgstr ""
+"使用法: genigma [-h] [--help] [--loud] [-l] WHEELORDER RINGS STARTPOS "
+"PLUGBOARD\n"
+"GUI で使用する場合はパラメータを何も付けないで起動します。\n"
+
+#: src/main.c:36
+msgid ""
+" -h --help      Zeige diesen Bildschirm.\n"
+" -l --loud      Schreibe die Walzenstellung nach jedem Zeichen heraus.\n"
+" WALZEN         Die Reihenfolge der Walzen. 5 stehen zur Verfgung\n"
+"                und 3 werden verwendet.\n"
+" RINGE          Die Position der 3 Ringe.\n"
+" STARTPOS       Die Startposition der 3 Walzen.\n"
+" STECKER        Der Stecker. Maximal 26 Zeichen\n"
+"\n"
+" Beispiel:\n"
+"   $genigma 215 adg bsa hasdfg\n"
+" Jetzt verschlsselt genigma den Text von stdin und gibt auf stdout aus.\n"
+" Achtung: Genigma verschlsselt nur Buchstaben von A bis Z. Alle anderen\n"
+" Zeichen werden nicht verschlsselt sondern direkt zum stdout geschickt.\n"
+msgstr ""
+" -h --help      使い方を表示します。\n"
+" -l --loud      一文字処理するごとに wheel の位置をプリントします。\n"
+" WHEELORDER     wheel の並べ方を指定。5 種類の wheel があり、\n"
+"                その中から 3 つを使います。\n"
+" RINGS          3 つの ring の位置を指定。\n"
+" STARTPOS       3 つの wheel のスタート位置を指定。\n"
+" PLUGBOARD      plugboard の指定。最大 26 文字。\n"
+"\n"
+" 例:\n"
+"   $ genigma 215 adg bsa hasdfg\n"
+" genigma はテキストを標準入力から読み、暗号化して標準出力に書き出します。\n"
+" 注意: enigma は英字 A から Z のみを暗号化します。それ以外の文字は\n"
+" 暗号化されずにそのまま標準出力に書き出されます。\n"
+
+#: src/main.c:244
+#, c-format
+msgid "Walzen %d %d %d Start %c %c %c Ringe %c %c %c Stecker \"%s\"\n"
+msgstr "Wheels %d %d %d Start %c %c %c Rings %c %c %c Plugboard \"%s\"\n"
+
+#: src/interface.c:95
+msgid "genigma"
+msgstr ""
+
+#: src/interface.c:177 src/support.c:97 src/support.c:135
+#, c-format
+msgid "Couldn't find pixmap file: %s"
+msgstr "pixmap ファイル %s が見つかりません"
+
+#: src/interface.c:205
+msgid "Walze 1:"
+msgstr "Wheel 1:"
+
+#: src/interface.c:215
+msgid "Walze 2:"
+msgstr "Wheel 2:"
+
+#: src/interface.c:225
+msgid "Walze 3:"
+msgstr "Wheel 3:"
+
+#: src/interface.c:245
+msgid "1"
+msgstr ""
+
+#: src/interface.c:257
+msgid "2"
+msgstr ""
+
+#: src/interface.c:269
+msgid "3"
+msgstr ""
+
+#: src/interface.c:271
+msgid "Ring 1:"
+msgstr "Ring 1:"
+
+#: src/interface.c:281
+msgid "Ring 2:"
+msgstr "Ring 2:"
+
+#: src/interface.c:291
+msgid "Ring 3:"
+msgstr "Ring 3:"
+
+#: src/interface.c:301
+msgid "Start 1:"
+msgstr "Start 1:"
+
+#: src/interface.c:311
+msgid "Start 2:"
+msgstr "Start 2:"
+
+#: src/interface.c:321
+msgid "Start 3:"
+msgstr "Start 3:"
+
+#: src/interface.c:331
+msgid "Stecker:"
+msgstr "Plugboard:"
+
+#: src/interface.c:351 src/interface.c:363 src/interface.c:375
+#: src/interface.c:387 src/interface.c:399 src/interface.c:411
+msgid "A"
+msgstr ""
+
+#: src/interface.c:423
+msgid "Einstellungen"
+msgstr "設定"
+
+#: src/interface.c:440
+msgid "Eingabe"
+msgstr "入力"
+
+#: src/interface.c:457
+msgid "Rechne"
+msgstr "計算"
+
+#: src/interface.c:466
+msgid "Ausgabe"
+msgstr "出力"
+
+#: src/interface.c:483
+msgid "Enigma"
+msgstr "エニグマ"
+
+#: src/interface.c:499
+msgid "Animation"
+msgstr ""
+
+#: src/interface.c:517
+msgid "Eingabe von File"
+msgstr "ファイルから入力"
+
+#: src/interface.c:525 src/interface.c:550
+msgid "..."
+msgstr ""
+
+#: src/interface.c:542
+msgid "Ausgabe auf File"
+msgstr "ファイルへ出力"
+
+#: src/interface.c:559
+msgid "Optionen"
+msgstr "オプション"
+
+#: src/interface.c:605
+msgid "(C) 2000 Martin Oberzalek"
+msgstr ""
+
+#: src/interface.c:607
+msgid ""
+"Eine Emulation der brhmten Enigma.\n"
+"Kommentare an leo@checkitmail.at"
+msgstr ""
+"An emulation of the famous Enigma.\n"
+"Comments to leo@checkitmail.at"
+
+#: src/interface.c:624
+msgid ""
+"Der Stecker ist ungltig!\n"
+"Jeder Buchstabe darf nur einmal verwendet\n"
+"werden und es ist nur eine gerade Anzahl von \n"
+"Buchstaben zulssig."
+msgstr ""
+"Plugboard の指定が正しくありません。\n"
+"どの文字も指定できるのは一度だけで、\n"
+"指定文字の数は偶数でなければなりません。"
+
+#: src/interface.c:663
+msgid ""
+"Die Walzeneintrge sind ungltig!\n"
+"Es stehen 5 Walzen zur Verfgung die in\n"
+"beliebiger Reihenfolge eingesetzt werden\n"
+"knnen.\n"
+"Somit sind nur Zahlen zwischen 1 und 5 \n"
+"gltig."
+msgstr ""
+"Wheel の指定が正しくありません。\n"
+"5 種類の wheel が利用でき、どのような順にも\n"
+"指定できますが、数字の 1 から 5 で指定してください。"
+
+#: src/interface.c:702
+msgid ""
+"Die Ringstellung ist ungltig!\n"
+"Es drfen nur die Buchstaben A bis Z\n"
+"verwendet werden."
+msgstr ""
+"Ring の指定が正しくありません。\n"
+"A から Z までの英字を指定してください。"
+
+#: src/interface.c:741
+msgid ""
+"Die Startposition ist ungltig!\n"
+"Es drfen nur die Buchstaben A bis Z\n"
+"verwendet werden."
+msgstr ""
+"Start の指定が正しくありません。\n"
+"A から Z までの英字を指定してください。"
+
+#: src/callbacks.c:223
+msgid "Fehler beim Lesen vom File"
+msgstr "ファイルから入力できません"
+
+#: src/callbacks.c:275
+msgid "Fehler beim Schreiben auf File"
+msgstr "ファイルへ出力できません"
+
+#: src/callbacks.c:285
+msgid ""
+"Die Verschlsselung, oder Entschlsselung\n"
+"wurde erfolgreichdurchgefhrt."
+msgstr "The cryption, or encryption was successful"
+
+#: src/callbacks.c:369
+msgid "ffne Datei"
+msgstr "ファイルを開く"
+
+#: src/callbacks.c:397
+msgid "Speichern unter"
+msgstr "名前をつけて保存"
+
+#: src/support.c:113
+#, c-format
+msgid "Couldn't create pixmap from file: %s"
+msgstr ""
+
+#: src/enigma.c:96
+#, c-format
+msgid "Walzen Position : %c %c %c\n"
+msgstr "Wheel position : %c %c %c\n"

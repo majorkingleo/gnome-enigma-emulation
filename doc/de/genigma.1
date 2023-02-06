@@ -1,0 +1,72 @@
+.TH genigma "1"
+.SH NAME
+genigma \- Eine Emulation der brühmten Enigma. Der Verschlüsselungsmaschiene der Deutschen vor und im 2. Weltkrieg.
+.SH SYNTAX
+.B genigma 
+[[-l] [--loud]] [[-h] [--help]] 
+.I WALZEN
+.I RINGE
+.I STARTPOS 
+[
+.I STECKER
+]
+.SH BESCHREIBUNG
+.B genigma 
+ist eine Emulation der bekannten Enigma. 
+.B genigma 
+kann man aus der Kommandozeile heraus benutzen, Das Programm hatt aber auch ein grafisches
+.I GNOME 
+interface.
+
+.TP 
+.B \-l, \-\-loud
+Schreibt nach jedem Zeichen die Walzenstellung auf 
+.I stderr
+
+.TP
+.B \-h, \-\-help
+Schreibt einen kurzen Hilfebildschirm auf
+.I stderr
+
+.TP
+.B WALZEN
+Die Reihenfolge der Walzen. 5 stehen zur Verfügung und 3 werden verwendet.
+
+.TP
+.B RINGE
+Die Position der 3 Ringe.
+
+.TP
+.B STARTPOS
+Die Startposition der 3 Walzen.
+
+.TP
+.B STECKER
+Der Stecker. Maximal 26 Zeichen. 
+
+.SH BEISPIELE
+$genigma 215 adg bsa hasdfg
+.P
+Jetzt wartet das Programm auf die Eingabe. Diese erfolgt über 
+.I stdin
+.P
+Für weitere Beispiele sehen Sie sich bitte das mitgelieferte shellscript "example.sh" in Ihrem Documentationsverzeichnis an.
+
+.SH WARNUNG
+.B genigma
+sollte nicht zur Verschlüsselung wichtiger Dokumente oder Botschaften verwendet werden. Der Autor übernimmt
+.I keine
+Haftung!
+
+.SH FEHLER
+.B genigma
+ist in der Komandozeile wesentlich schneller und benötigt weniger Speicher.
+Beim
+.I GNOME
+interface wird der zu verschlüsselnde oder zu entschlüsselnde Text zuerst vollständig in den Speicher geladen, dann verschlüsselt und erst zum Schluß wieder (optional) in eine Datei geschrieben. 
+
+.SH AUTOR
+Martin Oberzalek <leo@checkitmail.at>
+
+Homepage: http://members.chello.at/oberzalek/programme_gnome_de.html
+

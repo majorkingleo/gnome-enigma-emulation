@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=genigma
+Comment=Enigma emulation
+Comment[en]=Enigma emulation
+Comment[de]=Enigma Emulation
+Exec=genigma
+Terminal=0
+Type=Application
+Icon=genigma/genigma.png

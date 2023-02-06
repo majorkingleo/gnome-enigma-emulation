@@ -1,0 +1,27 @@
+2001-11-29  King Leo - Martin Oberzalek  <kingleo@gmx.at>
+
+	applied patch by KAWAMURA Masao <kawamura@mlb.co.jp>
+
+Mit Jan 26 16:53:09 CET 2000 Martin Oberzalek
+	Version 1.0 released
+
+Fri Jan 28 14:54:50 CET 2000 Martin Oberzalek
+	Version 1.1 released
+	de manpage added
+	en manpage added
+
+Mit Feb 16 12:54:09 CET 2000 Martin Oberzalek
+	examples from Alexander Oberzalek added
+	Icon added
+
+2000-04-03 Martin Oberzalek
+	Original Enigma logo added to the about box.
+	automake/autoconf tuned
+
+2000-04-04 Martin Oberzalek
+	Documentation about Enigma added.
+
+2000-04-06 Martin Oberzalek
+	* image format for Documentation changed to jpg 
+	  thx to Berhard Rieder
+        * pixmaps/enigma2.png converted	to jpg
